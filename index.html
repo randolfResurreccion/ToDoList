@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To Do List</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
 </head>
+
 <body>
 
     <div class="container">
+        <!-- header -->
+      <header>
+          <h2 class="title">To Do List</h2>
+      </header>
 
-        <div class="header">
-            <h1>Hello World</h1>
+      <!-- Form -->
+      <div class="form-section">
+         <form id="form-input" action="">
+             <input id="item-input" type="text">
+             <button id="addBtn"><i class="fa fa-plus"></i> Task</button>
+         </form>
+      </div>
 
-        </div>
+      <!-- List Content -->
+      <div class="main-content">
+          <!-- task to do -->
+          <div id="list-todo">
+              <h4>Task:</h4>
+              <ul>
+                  <li>
+                    <button id="checkBtn"><i class="fa fa-check"></i></button>
+                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
+                    <span class="displayDiv">Drink Coffee</span>
+                  </li>
+                  <li>
+                    <button id="checkBtn"><i class="fa fa-check"></i></button>
+                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
+                    <span class="displayDiv">Learn Javascript</span>
+                  </li>
+                  <li>
+                    <button id="checkBtn"><i class="fa fa-check"></i></button>
+                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
+                    <span class="displayDiv">Sleep</span>
 
-        <div class="main">
-            <h3>To Do List: </h3>
+                  </li>
+              </ul>
+    
 
-        </div>
+          </div>
 
-        <div class="footer">
-            <form action="">
-                <label for="">Add</label>
-                <input type="text">
-            </form>
-        </div>
+          <!-- comleted task -->
+          <div id="list-done">
+              <h4>Completed Task:</h4>
 
-
-
-
-
+          </div>
+      </div>
     </div>
 
+      
 
-    <script src="app.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
+
 </html>
