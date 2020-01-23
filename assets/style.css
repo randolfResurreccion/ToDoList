@@ -38,9 +38,17 @@ header {
     text-align: center;
 }
 
+#item-input {
+    border: 2px solid red;
+    border-radius: 15px;
+    outline: none;
+}
+
+
 .main-content {
     background: #fff;
     height: 65%;
+    margin-top: 20px;
 }
 
 #list-todo,
@@ -68,22 +76,50 @@ h4  {
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
     padding-left: 15px;
+    list-style: none;
 }
 
+.li-style {
+    color: #fff;
+    margin-left: 10px;
+    /* position: relative;
+    top: 15px; */
+}
+
+.wrapper-scrollable {
+    overflow: scroll;
+}
+
+.inline-styling {
+    display: inline-block;
+}
+
+.check-btn {
+    margin-right: 5px;
+}
+
+.remove-btn {
+    margin-right: 10px;
+}
+
+.complete-styling {
+    color: red;
+    text-decoration: line-through;
+}
+
+#random-button {
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 18px;
+    width: 20%;
+    height: 25%;
+}
+
+
+
 /* Buttons */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
