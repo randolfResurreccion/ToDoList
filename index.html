@@ -28,38 +28,26 @@
              <input id="item-input" type="text">
              <button id="addBtn"><i class="fa fa-plus"></i> Task</button>
          </form>
+         <button id="random-button">Random Task</button>
+
       </div>
 
       <!-- List Content -->
       <div class="main-content">
           <!-- task to do -->
-          <div id="list-todo">
+          <div id="list-todo" class="wrapper-scrollable">
               <h4>Task:</h4>
-              <ul>
-                  <li>
-                    <button id="checkBtn"><i class="fa fa-check"></i></button>
-                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
-                    <span class="displayDiv">Drink Coffee</span>
-                  </li>
-                  <li>
-                    <button id="checkBtn"><i class="fa fa-check"></i></button>
-                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
-                    <span class="displayDiv">Learn Javascript</span>
-                  </li>
-                  <li>
-                    <button id="checkBtn"><i class="fa fa-check"></i></button>
-                    <button id="trashBtn"><i class="fa fa-trash"></i></button>
-                    <span class="displayDiv">Sleep</span>
+             <ul class="display-task">
 
-                  </li>
-              </ul>
-    
-
+             </ul>
           </div>
 
           <!-- comleted task -->
-          <div id="list-done">
+          <div id="list-done" class="wrapper-scrollable">
               <h4>Completed Task:</h4>
+              <ul class="completed-task">
+
+              </ul>
 
           </div>
       </div>
@@ -71,7 +59,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
 </body>
 
 </html>
